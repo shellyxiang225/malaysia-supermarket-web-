@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SatuMart - Kedai Runcit Kejiranan Anda</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛒</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white flex flex-col min-h-screen">
+    <div
+      class="bg-blue-900 text-white text-xs font-bold py-3 px-4 text-center tracking-wide"
+    >
+      📍 CAWANGAN BARU DI SHAH ALAM KINI DIBUKA! | 🕒 Buka Setiap Hari: 8.00
+      Pagi - 10.00 Malam
+    </div>
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <div
+            class="bg-orange-500 text-white font-black text-2xl p-2 rounded-lg transform -rotate-3"
+          >
+            SM
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl font-extrabold text-blue-900 leading-none"
+              >Satu<span class="text-orange-500">Mart</span></span
+            >
+            <span class="text-[10px] text-gray-500 font-semibold tracking-wider"
+              >HARGA BORONG SETIAP HARI</span
+            >
+          </div>
+        </div>
+
+        <div class="hidden md:flex space-x-8 text-sm font-bold text-gray-700">
+          <a href="promosi.html" class="hover:text-orange-500">Promosi Mingguan</a>
+          <a href="#" class="hover:text-orange-500">Katalog</a>
+          <a href="#lokasi" class="hover:text-orange-500">Lokasi Cawangan</a>
+          <a href="#hubungi" class="hover:text-orange-500">Hubungi Kami</a>
+        </div>
+
+        <a
+          href="#lokasi"
+          class="bg-blue-900 text-white px-5 py-2 rounded-full font-bold text-sm hover:bg-blue-800 transition shadow-lg hidden sm:block"
+        >
+          Kunjungi Kami 📍
+        </a>
+      </div>
+    </nav>
+
+    <section class="relative h-[500px] flex items-center">
+      <img
+        src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&q=80&w=1600"
+        alt="Interior Kedai SatuMart"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"
+      ></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 w-full text-white">
+        <span
+          class="bg-orange-500 text-white px-3 py-1 rounded text-xs font-bold uppercase mb-4 inline-block"
+          >Local & Fresh</span
+        >
+        <h1
+          class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight max-w-xl"
+        >
+          Barang Dapur <br />Segar & Murah <br />Di Kawasan Anda.
+        </h1>
+        <p class="text-lg text-gray-200 mb-8 max-w-lg">
+          Kami menyediakan barangan runcit, sayuran segar, dan keperluan harian
+          dengan harga yang berpatutan. Parking luas & selesa.
+        </p>
+        <div class="flex gap-4">
+          <a
+            href="#lokasi"
+            class="bg-white text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition"
+          >
+            Lihat Lokasi
+          </a>
+          <div class="flex items-center gap-2 text-sm font-semibold">
+            <span class="bg-green-500 p-1 rounded-full">✓</span> Halal Dijamin
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900">
+            Apa Yang Ada Di Sini?
+          </h2>
+          <p class="text-gray-500 mt-2">
+            Lengkapkan keperluan rumah anda di bawah satu bumbung.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-2xl shadow-sm overflow-hidden group hover:shadow-xl transition"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=600"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Pasar Segar</h3>
+              <p class="text-gray-500 text-sm">
+                Sayuran kampung, buah-buahan, ayam & daging segar setiap pagi.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-sm overflow-hidden group hover:shadow-xl transition"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?auto=format&fit=crop&q=80&w=600"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Makanan & Minuman
+              </h3>
+              <p class="text-gray-500 text-sm">
+                Beras, minyak, rempah ratus, biskut dan aneka snek tempatan.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-sm overflow-hidden group hover:shadow-xl transition"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Keperluan Rumah
+              </h3>
+              <p class="text-gray-500 text-sm">
+                Sabun pencuci, tisu, peralatan dapur dan kelengkapan diri.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div
+          class="flex flex-col items-center text-center p-4 border border-gray-100 rounded-xl"
+        >
+          <div
+            class="bg-orange-100 text-orange-600 w-12 h-12 flex items-center justify-center rounded-full text-2xl mb-3"
+          >
+            🅿️
+          </div>
+          <h4 class="font-bold text-gray-800">Parking Percuma</h4>
+          <p class="text-xs text-gray-500 mt-1">Mudah untuk loading barang.</p>
+        </div>
+        <div
+          class="flex flex-col items-center text-center p-4 border border-gray-100 rounded-xl"
+        >
+          <div
+            class="bg-blue-100 text-blue-600 w-12 h-12 flex items-center justify-center rounded-full text-2xl mb-3"
+          >
+            ❄️
+          </div>
+          <h4 class="font-bold text-gray-800">Bilik Sejuk</h4>
+          <p class="text-xs text-gray-500 mt-1">Jaminan kesegaran 100%.</p>
+        </div>
+        <div
+          class="flex flex-col items-center text-center p-4 border border-gray-100 rounded-xl"
+        >
+          <div
+            class="bg-green-100 text-green-600 w-12 h-12 flex items-center justify-center rounded-full text-2xl mb-3"
+          >
+            💳
+          </div>
+          <h4 class="font-bold text-gray-800">Cashless</h4>
+          <p class="text-xs text-gray-500 mt-1">Terima TNG & DuitNow.</p>
+        </div>
+        <div
+          class="flex flex-col items-center text-center p-4 border border-gray-100 rounded-xl"
+        >
+          <div
+            class="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-full text-2xl mb-3"
+          >
+            🤝
+          </div>
+          <h4 class="font-bold text-gray-800">Mesra Pelanggan</h4>
+          <p class="text-xs text-gray-500 mt-1">Staff kami sedia membantu.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="lokasi" class="bg-blue-900 text-white py-16">
+      <div
+        class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <h2 class="text-3xl font-bold mb-6">Jom Singgah SatuMart!</h2>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="bg-white/10 p-3 rounded-lg text-2xl">📍</div>
+              <div>
+                <h4 class="font-bold text-lg">Alamat Kedai</h4>
+                <p class="text-blue-200 leading-relaxed">
+                  No. 12 & 14, Jalan Plumbum 7/101,<br />
+                  Seksyen 7, 40000 Shah Alam,<br />
+                  Selangor Darul Ehsan.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="bg-white/10 p-3 rounded-lg text-2xl">🕒</div>
+              <div>
+                <h4 class="font-bold text-lg">Waktu Operasi</h4>
+                <p class="text-blue-200">
+                  Isnin - Ahad: 8.00 Pagi - 10.00 Malam
+                </p>
+                <p class="text-blue-200 text-sm mt-1">(Termasuk Cuti Umum)</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="bg-white/10 p-3 rounded-lg text-2xl">📞</div>
+              <div>
+                <h4 class="font-bold text-lg">Hubungi Kami</h4>
+                <p class="text-blue-200">Tel: +603-5510 1234</p>
+                <p class="text-blue-200">WhatsApp: +6012-345 6789</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <button
+              class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-3 rounded-lg flex items-center gap-2 transition"
+            >
+              <span>🚙</span> Waze ke Sini
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="bg-gray-200 rounded-xl h-[400px] w-full relative overflow-hidden shadow-2xl border-4 border-white/10"
+        >
+          <iframe
+            width="100%"
+            height="100%"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?q=Jalan+Plumbum+R7%2FR%2C+Seksyen+7%2C+40000+Shah+Alam&t=&z=17&ie=UTF8&iwloc=&output=embed"
+          >
+          </iframe>
+
+          <div
+            class="absolute bottom-4 left-4 bg-white text-gray-800 p-4 rounded-lg shadow-lg max-w-xs z-10"
+          >
+            <p class="font-bold text-sm">SatuMart Shah Alam</p>
+            <p class="text-xs text-gray-500 mb-1">
+              4.9 ⭐⭐⭐⭐⭐ (Terbaik di Seksyen 7)
+            </p>
+            <p
+              class="text-xs text-blue-600 font-semibold cursor-pointer hover:underline"
+            >
+              <a href="https://goo.gl/maps/xyz" target="_blank"
+                >Buka di Google Maps ↗</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="hubungi" class="py-16 bg-white border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900">Hubungi Kami</h2>
+          <p class="text-gray-500 mt-2">
+            Ada sebarang soalan, aduan, atau cadangan? Kami sedia mendengar.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="space-y-8">
+            <div class="flex items-start gap-4">
+              <div class="bg-blue-50 p-4 rounded-xl text-blue-600 text-2xl">
+                🎧
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900 text-lg">
+                  Khidmat Pelanggan
+                </h4>
+                <p class="text-gray-600 text-sm mb-2">
+                  Untuk pertanyaan stok atau keahlian.
+                </p>
+                <p class="font-bold text-xl text-blue-900">+603-5510 8888</p>
+                <p class="text-xs text-gray-400">Isnin - Jumaat (9am - 6pm)</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="bg-orange-50 p-4 rounded-xl text-orange-600 text-2xl">
+                🤝
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900 text-lg">
+                  Pembekal & Vendor
+                </h4>
+                <p class="text-gray-600 text-sm mb-2">
+                  Berminat letak produk anda di SatuMart?
+                </p>
+                <a
+                  href="mailto:vendor@satumart.com.my"
+                  class="text-orange-600 font-bold hover:underline"
+                  >vendor@satumart.com.my</a
+                >
+              </div>
+            </div>
+
+            <div class="pt-6 border-t border-gray-100">
+              <h5 class="font-bold text-gray-800 mb-4">
+                Ikuti Promosi Terkini:
+              </h5>
+              <div class="flex gap-4">
+                <button
+                  class="bg-blue-600 text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-blue-700 transition"
+                >
+                  Facebook
+                </button>
+                <button
+                  class="bg-pink-600 text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-pink-700 transition"
+                >
+                  Instagram
+                </button>
+                <button
+                  class="bg-black text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-gray-800 transition"
+                >
+                  TikTok
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-50 p-8 rounded-2xl border border-gray-100 shadow-sm"
+          >
+            <form
+              onsubmit="alert('Terima kasih! Mesej anda telah dihantar.'); return false;"
+            >
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2"
+                  >Nama Anda</label
+                >
+                <input
+                  type="text"
+                  placeholder="Cth: Siti Nurhaliza"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-orange-500"
+                />
+              </div>
+
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2"
+                  >Nombor Telefon / WhatsApp</label
+                >
+                <input
+                  type="text"
+                  placeholder="Cth: 012-3456789"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-orange-500"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2"
+                  >Mesej / Aduan</label
+                >
+                <textarea
+                  rows="4"
+                  placeholder="Tulis mesej anda di sini..."
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-orange-500"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-blue-900 text-white font-bold py-3 rounded-lg hover:bg-blue-800 transition shadow-lg"
+              >
+                Hantar Mesej 📤
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-50 py-10 border-t border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <div class="flex justify-center gap-2 mb-4">
+          <span
+            class="px-2 py-1 bg-white border rounded text-xs text-gray-500 font-bold"
+            >TUNAI</span
+          >
+          <span
+            class="px-2 py-1 bg-pink-600 text-white rounded text-xs font-bold"
+            >DuitNow QR</span
+          >
+          <span
+            class="px-2 py-1 bg-blue-600 text-white rounded text-xs font-bold"
+            >TNG eWallet</span
+          >
+          <span
+            class="px-2 py-1 bg-green-500 text-white rounded text-xs font-bold"
+            >GrabPay</span
+          >
+        </div>
+        <p class="text-gray-500 text-sm">
+          © 2026 SatuMart Enterprise (002345678-X). Hak Cipta Terpelihara.<br />
+          Dimiliki sepenuhnya oleh SatuServis Group.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promosi Hebat - SatuMart</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛒</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* 模拟超市特价标签效果 */
+        .price-tag {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,0 100,0 100,80 50,100 0,80' fill='%23dc2626'/%3E%3C/svg%3E");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-yellow-50 flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="bg-orange-500 text-white font-black text-2xl p-2 rounded-lg transform -rotate-3">SM</div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold text-blue-900 leading-none">Satu<span class="text-orange-500">Mart</span></span>
+                    <span class="text-[10px] text-gray-500 font-semibold tracking-wider">HARGA BORONG SETIAP HARI</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-bold text-gray-700">
+                <a href="promosi.html" class="text-orange-600 border-b-2 border-orange-600">Promosi Mingguan</a>
+                <a href="index.html" class="hover:text-orange-500">Katalog</a>
+                <a href="index.html#lokasi" class="hover:text-orange-500">Lokasi Cawangan</a>
+                <a href="index.html#hubungi" class="hover:text-orange-500">Hubungi Kami</a>
+            </div>
+
+            <a href="index.html" class="text-gray-500 text-sm font-semibold hover:text-blue-900">
+                &larr; Kembali ke Utama
+            </a>
+        </div>
+    </nav>
+
+    <header class="bg-red-600 text-white py-12 relative overflow-hidden">
+        <div class="absolute top-0 right-0 opacity-10 transform translate-x-1/4 -translate-y-1/4">
+            <svg width="400" height="400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 text-center relative z-10">
+            <span class="bg-yellow-400 text-red-700 px-4 py-1 rounded-full font-black text-sm uppercase tracking-widest shadow-lg mb-4 inline-block transform -rotate-2">Sah Sehingga 12 Jan 2026</span>
+            <h1 class="text-5xl md:text-7xl font-black mb-2 drop-shadow-md">JUALAN RUNTUH!</h1>
+            <p class="text-xl text-red-100 font-bold">Harga Terendah Di Pasaran. Siapa Cepat Dia Dapat.</p>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <div class="flex items-center gap-4 mb-8">
+            <h2 class="text-3xl font-black text-gray-900 italic uppercase bg-white px-4 py-2 border-l-8 border-green-500 shadow-sm">
+                🥬 Pasar Segar (Fresh Market)
+            </h2>
+            <div class="h-1 bg-gray-300 flex-1"></div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border-2 border-transparent hover:border-red-500 transition group relative">
+                <div class="absolute top-0 left-0 bg-red-600 text-white text-xs font-bold px-2 py-1 z-10">JIMAT RM2.00</div>
+                <img src="https://images.pexels.com/photos/616353/pexels-photo-616353.jpeg?auto=compress&cs=tinysrgb&w=600" class="w-full h-48 object-cover" alt="Ayam Segar" onerror="this.onerror=null;this.src='https://placehold.co/800x600/eeeeee/111827?text=Gambar+Tidak+Tersedia';">
+                <div class="p-4 text-center">
+                    <h3 class="font-bold text-gray-800 text-lg">Ayam Segar (Seekor)</h3>
+                    <p class="text-gray-400 text-sm line-through decoration-red-500 decoration-2">RM 18.90</p>
+                    <div class="text-red-600 font-black text-3xl mt-1">RM 16.90</div>
+                    <p class="text-xs text-gray-500 mt-2">Terhad 3 ekor / keluarga</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border-2 border-transparent hover:border-red-500 transition group relative">
+                <img src="https://images.unsplash.com/photo-1506976785307-8732e854ad03?auto=format&fit=crop&q=80&w=400" class="w-full h-48 object-cover" alt="Telur Gred A" onerror="this.onerror=null;this.src='https://placehold.co/800x600/eeeeee/111827?text=Gambar+Tidak+Tersedia';">
+                <div class="p-4 text-center">
+                    <h3 class="font-bold text-gray-800 text-lg">Telur Gred A (30s)</h3>
+                    <p class="text-gray-400 text-sm line-through decoration-red-500 decoration-2">RM 13.50</p>
+                    <div class="text-red-600 font-black text-3xl mt-1">RM 11.90</div>
+                    <p class="text-xs text-gray-500 mt-2">Stok Harian Baru</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border-2 border-transparent hover:border-red-500 transition group relative">
+                <div class="absolute top-0 left-0 bg-red-600 text-white text-xs font-bold px-2 py-1 z-10">BEST BUY</div>
+                <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&q=80&w=400" class="w-full h-48 object-cover" alt="Sawi / Bayam" onerror="this.onerror=null;this.src='https://placehold.co/800x600/eeeeee/111827?text=Gambar+Tidak+Tersedia';">
+                <div class="p-4 text-center">
+                    <h3 class="font-bold text-gray-800 text-lg">Sawi / Bayam (Ikat)</h3>
+                    <p class="text-gray-400 text-sm line-through decoration-red-500 decoration-2">RM 2.50</p>
+                    <div class="text-red-600 font-black text-3xl mt-1">RM 1.50</div>
+                    <p class="text-xs text-gray-500 mt-2">Segar dari Cameron</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border-2 border-transparent hover:border-red-500 transition group relative">
+                <img src="https://placehold.co/800x600/93c5fd/0f172a?text=Ikan+Kembung+1KG" class="w-full h-48 object-cover" alt="Ikan Kembung (1KG)" onerror="this.onerror=null;this.src='https://placehold.co/800x600/eeeeee/111827?text=Gambar+Tidak+Tersedia';">
+                <div class="p-4 text-center">
+                    <h3 class="font-bold text-gray-800 text-lg">Ikan Kembung (1KG)</h3>
+                    <p class="text-gray-400 text-sm line-through decoration-red-500 decoration-2">RM 15.00</p>
+                    <div class="text-red-600 font-black text-3xl mt-1">RM 12.50</div>
+                    <p class="text-xs text-gray-500 mt-2">Siang Percuma</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-8 pb-16">
+        <div class="flex items-center gap-4 mb-8">
+            <h2 class="text-3xl font-black text-gray-900 italic uppercase bg-white px-4 py-2 border-l-8 border-orange-500 shadow-sm">
+                📦 Barang Dapur (Pantry)
+            </h2>
+            <div class="h-1 bg-gray-300 flex-1"></div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border-2 border-transparent hover:border-red-500 transition group relative">
+                <div class="absolute top-0 right-0 bg-yellow-400 text-red-900 text-xs font-bold px-2 py-1 z-10">HOT ITEM 🔥</div>
+                <img src="https://placehold.co/400x400/eeeeee/4b5563?text=Beras+Wangi+10KG" class="w-full h-48 object-cover" alt="Beras Wangi AAA 10KG" onerror="this.onerror=null;this.src='https://placehold.co/800x600/eeeeee/111827?text=Gambar+Tidak+Tersedia';">
+                <div class="p-4 text-center">
+                    <h3 class="font-bold text-gray-800 text-lg">Beras Wangi AAA 10KG</h3>
+                    <p class="text-gray-400 text-sm line-through decoration-red-500 decoration-2">RM 38.00</p>
+                    <div class="text-red-600 font-black text-3xl mt-1">RM 29.99</div>
+                    <button class="w-full mt-3 bg-blue-900 text-white text-sm font-bold py-2 rounded hover:bg-blue-800">Lihat di Kedai</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border-2 border-transparent hover:border-red-500 transition group relative">
+                <img src="https://placehold.co/400x400/15803d/ffffff?text=Milo+2KG" class="w-full h-48 object-cover" alt="Milo Pek 2KG" onerror="this.onerror=null;this.src='https://placehold.co/800x600/eeeeee/111827?text=Gambar+Tidak+Tersedia';">
+                <div class="p-4 text-center">
+                    <h3 class="font-bold text-gray-800 text-lg">Milo Pek 2KG</h3>
+                    <p class="text-gray-400 text-sm line-through decoration-red-500 decoration-2">RM 36.50</p>
+                    <div class="text-red-600 font-black text-3xl mt-1">RM 31.90</div>
+                    <button class="w-full mt-3 bg-blue-900 text-white text-sm font-bold py-2 rounded hover:bg-blue-800">Lihat di Kedai</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border-2 border-transparent hover:border-red-500 transition group relative">
+                <img src="https://placehold.co/400x400/fcd34d/000000?text=Minyak+Masak+5KG" class="w-full h-48 object-cover" alt="Minyak Masak Buruh 5KG" onerror="this.onerror=null;this.src='https://placehold.co/800x600/eeeeee/111827?text=Gambar+Tidak+Tersedia';">
+                <div class="p-4 text-center">
+                    <h3 class="font-bold text-gray-800 text-lg">Minyak Masak Buruh 5KG</h3>
+                    <p class="text-gray-400 text-sm line-through decoration-red-500 decoration-2">RM 29.00</p>
+                    <div class="text-red-600 font-black text-3xl mt-1">RM 24.50</div>
+                    <button class="w-full mt-3 bg-blue-900 text-white text-sm font-bold py-2 rounded hover:bg-blue-800">Lihat di Kedai</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border-2 border-transparent hover:border-red-500 transition group relative">
+    <div class="absolute top-0 left-0 bg-green-600 text-white text-xs font-bold px-2 py-1 z-10">JIMAT RM3.00</div>
+    <img src="https://placehold.co/400x400/60a5fa/0f172a?text=Gula+1KG" class="w-full h-48 object-cover" alt="Gula Putih 1KG" onerror="this.onerror=null;this.src='https://placehold.co/800x600/eeeeee/111827?text=Gambar+Tidak+Tersedia';">
+    <div class="p-4 text-center">
+        <h3 class="font-bold text-gray-800 text-lg">Gula Putih 1KG</h3>
+        <p class="text-gray-400 text-sm line-through decoration-red-500 decoration-2">RM 6.50</p>
+        <div class="text-red-600 font-black text-3xl mt-1">RM 3.50</div>
+        <button class="w-full mt-3 bg-blue-900 text-white text-sm font-bold py-2 rounded hover:bg-blue-800">Lihat di Kedai</button>
+    </div>
+</div>
